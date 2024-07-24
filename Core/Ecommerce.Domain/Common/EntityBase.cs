@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Domain.Common
 {
-    public class EntityBase:IEntityBase
+    public abstract class EntityBase:IEntityBase
     {
         public int Id { get; set; }
 
         public DateTime CreatedDate { get; set; } =DateTime.Now;
+        public DateTime UpdatedDate { get; set; }
 
         public int IsDeleted { get; set; }
     }

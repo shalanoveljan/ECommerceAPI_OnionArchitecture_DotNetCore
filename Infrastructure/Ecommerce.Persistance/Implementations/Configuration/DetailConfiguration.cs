@@ -23,6 +23,7 @@ namespace Ecommerce.Persistance.Implementations.Configuration
                 .HasForeignKey(p => p.CategoryId)
                 .OnDelete(DeleteBehavior.NoAction);
 
+
             AddSeedData(builder,3);
         }
 

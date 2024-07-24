@@ -22,6 +22,7 @@ namespace Ecommerce.Persistance.Implementations.Configuration
                 .HasForeignKey(p => p.BrandId)
                 .OnDelete(DeleteBehavior.NoAction);
 
+
             AddSeedData(builder, 5);
         }
         /// <summary>
