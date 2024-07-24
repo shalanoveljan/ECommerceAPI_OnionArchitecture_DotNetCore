@@ -18,6 +18,7 @@ namespace Ecommerce.Persistance.Implementations.Configuration
             builder.Property(b => b.Title).HasMaxLength(50);
             builder.Property(b => b.Description).HasMaxLength(1000);
 
+
             AddSeedData(builder, 4);
         }
         /// <summary>
